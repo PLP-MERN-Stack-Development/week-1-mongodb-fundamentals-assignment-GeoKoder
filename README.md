@@ -1,47 +1,76 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19714673&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+# 🗄️ Week 1: MongoDB – Data Layer Fundamentals and Advanced Techniques
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+## 🚀 Objective
 
-## Assignment Overview
+This assignment focuses on learning the fundamentals of MongoDB, including installation, creating collections, performing CRUD operations, using aggregation pipelines, and implementing indexing for performance optimization.
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+---
 
-## Getting Started
+## 📂 Tasks Overview
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+### ✅ Task 1: MongoDB Setup
 
-## Files Included
+- Installed MongoDB locally / Set up MongoDB Atlas
+- Created a database called `plp_bookstore`
+- Created a collection named `books`
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+---
 
-## Requirements
+### ✅ Task 2: Basic CRUD Operations
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+- Inserted at least 10 book documents using the `insert_books.js` script
+- Each document includes fields like `title`, `author`, `genre`, `published_year`, `price`, `in_stock`, `pages`, and `publisher`
+- Wrote queries to:
+  - Find books by genre, year, and author
+  - Update book information
+  - Delete a book by title
 
-## Submission
+---
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+### ✅ Task 3: Advanced Queries
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+- Queried books that meet multiple conditions
+- Used projections to return specific fields
+- Sorted results by book price
+- Implemented pagination using `limit()` and `skip()` for 5 books per page
 
-## Resources
+---
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+### ✅ Task 4: Aggregation Pipelines
+
+- Calculated the average price of books grouped by genre
+- Identified the author with the most books
+- Grouped books by publication decade and counted them
+
+---
+
+### ✅ Task 5: Indexing & Performance Optimization
+
+- Created an index on the `title` field for faster searches
+- Created a compound index on `author` and `published_year`
+- Used the `.explain()` method to demonstrate performance improvements with indexing
+
+---
+
+
+## 🛠️ Setup Instructions
+
+1. Install MongoDB Community Edition or set up a MongoDB Atlas account
+2. Run the `insert_books.js` script to populate the database
+3. Use MongoDB Shell (`mongosh`) or MongoDB Compass to interact with the database
+4. Save all MongoDB queries in a file named `queries.js`
+
+---
+
+## 📸 Screenshot
+
+### A screenshot of the collection
+![Screenshot](./schreenshot1.png)
+### A screenshot of the documents
+![Screenshot](./schreenshot2.png)
+### A screenshot of the documents
+![Screenshot](./schreenshot3.png)
+
+---
+
+**All tasks completed successfully.**
